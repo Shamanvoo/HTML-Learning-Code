@@ -12,94 +12,186 @@
 </head>
 
 <body>
-    <h1>My goals for this year!</h1> 
+    <header>
+        <h1>My goals for this year!</h1> 
 
-    <hr>
-    <nav>
-        <ul>
-            <li><a href="#html">Learning HTML</a></li>
-            <li><a href="#Vacation">My Vacation</a></li>   
-        </ul>
-    </nav>
-
-    <hr>
-    <section id="html">
-        <h2>I'm ready to learn HTML</h2> 
-            <p>This is my first web page.</p> 
-            <img src="img/html_logo_300x300.png" alt="HTML5 Logo" title="I am learning HTML5" width="300" height="300">
-            <figure>
-                <figcaption>An example of HTML5 code</figcaption>
-                <p>
-                    <code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code>
-                </p>
-            </figure>
-
-      
-        <h3>My daily schedule</h3> 
-            <p>Let me tell you how:</p>
-            <ol>
-                <li> I learn more about web dev.</li>
-                <li> I plan out my schedule. </li>
-                <li> I use resources from <abbr title="Mozilla Developer Network">
-                <a href="https://developer.mozilla.org/en-US/">MDN</a></abbr>.  </li>
-            </ol>
-    </section>
-
-    <hr>
-
-    <section id="Vacation">
-        <h2>I am also planning a vacation</h2> 
-            <p>I've been working hard and <em>really need a getaway</em>.</p>  
-            <p> I live in <abbr title="Singapore">SG</abbr> so I want to visit Japan.</p>
-   
-      
-    <!-- TODO: Add more places-->
-        <h3>Places I'd like to visit</h3>
+        <nav aria-label="Primary-navigation">
             <ul>
-                <li>
-                    <p>Japan</p>
-                    <figure>
-                        <img src="img/caribbean.jpg" alt="Caribbean Beach" title="I want to visit this place" width="400" height="225" loading="lazy">
-                        <figcaption>
-                            Beach Getaway
-                        </figcaption>
-                    </figure>
-                </li>
-
-                <li>
-                    <p> I've heard good things about going here:</p>
-                        <address>
-                            4 Chome-2-8 Shibakoen
-                            <br>Minato City
-                            <br>Tokyo 105-0011, Japan
-                        </address>
-                        <figure>
-                            <img src="img/vacation.jpg" alt="vacation" title="It's 5 o'Clock Somewhere" width="400" height="267" loading="lazy">
-                            <figcaption>
-                                Vacation Photo
-                            </figcaption>
-                        </figure>
-                </li>
+                <li><a href="#html">Learning HTML</a></li>
+                <li><a href="#Vacation">My Vacation</a></li>   
             </ul>
+        </nav>
+    </header>
 
-        <h3>Places I'd like to avoid</h3> 
-            <dl>
-                 <dt>China</dt>
-                 <dd>I hear this is <strong>dirty</strong>!</dd>
-            
-                 <dt>India</dt>
-                 <dd>This is also dirty</dd>
-            
-                 <dt>Mountain Tops</dt>
-                 <dd>Also Cold</dd>
-            </dl>
+    <hr>
 
-    </section>
+    <main>
+        <article id="html">
+            <h2>I'm ready to learn HTML</h2> 
+                <p>This is my first web page.</p> 
+                <section>
+                    <h3>HTML5</h3>
+                        <img src="img/html_logo_300x300.png" alt="HTML5 Logo" title="I am learning HTML5" width="300" height="300">
+                        <figure>
+                            <figcaption>An example of HTML5 code</figcaption>
+                            <p>
+                                <code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code>
+                            </p>
+                        </figure>
+                </section>
+
+            <section>
+                <h3>My daily schedule</h3> 
+                    <p>Let me tell you how:</p>
+                    <ol>
+                        <li> I learn more about web dev.</li>
+                        <li> I plan out my schedule. </li>
+                        <li> I use resources from <abbr title="Mozilla Developer Network">
+                        <a href="https://developer.mozilla.org/en-US/">MDN</a></abbr>.  </li>
+                    </ol>
+
+                    <aside>
+                        <details>
+                            <summary>
+                                Guess the <mark>number of hours</mark> I code per day
+                            </summary>
+                            <p>I start at <time datetime="07:00">7am</time> and I write code for <time datetime="PT1H">1 hour</time> every morning.</p>
+                        </details>
+                    </aside>
+
+                    <br>
+
+                    <table>
+                        <caption>My Daily Schedule</caption>
+
+                        <thead>
+                            <tr>
+                                <th>&nbsp;</th>
+                                <th scope="col">Time</th>
+                                <th scope="col">Activity</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <th scope="row">Wake Up</th>
+                                <td>
+                                    <time datetime="07:00">7am</time>-<time datetime="08:00">8am</time>
+                                </td>
+                                <td>Write Code</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">Get Ready</th>
+                                <td>
+                                    <time datetime="08:00">8am</time>-<time datetime="09:00">9am</time>
+                                </td>
+                                <td>Get Ready for work</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">OTW To work</th>
+                                <td>
+                                    <time datetime="09:00">9am</time>-<time datetime="10:00">10am</time>
+                                </td>
+                                <td>Commute to work</td>
+                            </tr>
+
+                            <tr>
+                                <th rowspan="2" scope="row">At work</th>
+                                <td rowspan="2">Other Times</td>
+                                <td>work</td>
+                            </tr>
+
+                            <tr>
+                                <td>Hate Life</td>
+                            </tr>
+
+                            <tr>
+                                <th>Go Home</th>
+                                <td>Home Time</td>
+                                <td>Sleep</td>
+                            </tr>
+
+                    </tbody>
+
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">Life sucks</td>
+                        </tr>
+                    </tfoot>
+                    
+                    </table>
+
+            </section>
+        </article>
+
         <hr>
-        &lt;&lt;&lt; &copy; <a href="about.html">Shayman</a> &gt;&gt;&gt;
+
+        <article id="Vacation">
+            <h2>I am also planning a vacation</h2> 
+                <p>I've been working hard and <em>really need a getaway</em>.</p>  
+                <p> I live in <abbr title="Singapore">SG</abbr> so I want to visit Japan.</p>
+        
+        
+                <!-- TODO: Add more places-->
+            <section>
+                <h3>Places I'd like to visit</h3>
+                    <ul>
+                        <li>
+                            <p>Japan</p>
+                            <figure>
+                                <img src="img/caribbean.jpg" alt="Caribbean Beach" title="I want to visit this place" width="400" height="225" loading="lazy">
+                                <figcaption>
+                                    Beach Getaway
+                                </figcaption>
+                            </figure>
+                        </li>
+
+                        <li>
+                            <p> I've heard good things about going here:</p>
+                                <address>
+                                    4 Chome-2-8 Shibakoen
+                                    <br>Minato City
+                                    <br>Tokyo 105-0011, Japan
+                                </address>
+                                <figure>
+                                    <img src="img/vacation.jpg" alt="vacation" title="It's 5 o'Clock Somewhere" width="400" height="267" loading="lazy">
+                                    <figcaption>
+                                        Vacation Photo
+                                    </figcaption>
+                                </figure>
+                        </li>
+                    </ul>
+            </section>
+
+            <section>
+                <h3>Places I'd like to avoid</h3> 
+                    <dl>
+                        <dt>China</dt>
+                        <dd>I hear this is <strong>dirty</strong>!</dd>
+                    
+                        <dt>India</dt>
+                        <dd>This is also dirty</dd>
+                    
+                        <dt>Mountain Tops</dt>
+                        <dd>Also Cold</dd>
+                    </dl>
+            </section>
+        </article>
+
+    </main>
+    
+    <hr>
+    
+    <footer>
+        <p>
+            &lt;&lt;&lt; &copy; <a href="about.html">Shayman</a> &gt;&gt;&gt;
+        </p>
         <p>
             <a href="#">Back To Top</a>
         </p>
+    </footer>
 </body>
 
 </html>
